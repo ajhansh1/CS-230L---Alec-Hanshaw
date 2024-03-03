@@ -1,8 +1,12 @@
 import React from 'react';
 
-const Card = ({ color, title }) => {
+const Card = ({ color, title, onSelect }) => {
+  const handleClick = () => {
+    onSelect(title);
+  };
+
   return (
-    <div className="card mx-3" style={{ backgroundColor: color }}>
+    <div className="card mx-3" style={{ backgroundColor: color }} onClick={handleClick}>
       <div className="card-body">
         <h2 className="card-title text-light mb-3">Card {title}</h2>
         <hr className="text-light" style={{opacity: '0.3'}} />

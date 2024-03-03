@@ -15,13 +15,13 @@ function App() {
       <div className="card-container">
       <div className="row">
           <div className="col">
-            <Card color="red" title="01" />
+            <Card color="blue" title="01" />
           </div>
           <div className="col">
-            <Card color="green" title="02" />
+            <Card color="red" title="02" />
           </div>
           <div className="col">
-            <Card color="blue" title="03" />
+            <Card color="green" title="03" />
           </div>
         </div>
       </div>
